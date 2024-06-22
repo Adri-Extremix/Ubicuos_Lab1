@@ -1,0 +1,92 @@
+* {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+#sample_map {
+    height: 100%;
+}
+#fila {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+#menu {
+    z-index: 1000;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 1%;
+    width: 50vw;
+    text-align: center;
+    user-select: none;
+}
+#menu_cabecera {
+    background-color: #4caf50;
+    color: white;
+    padding: 5vw;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10vh;
+    margin: 1%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu_desplegable {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.elemento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    background-color: #016601;
+    border-radius: 10vh;
+    height: 8vh;
+}
+#fijar {
+    transform: scale(1.5);
+}
+#fijar + label {
+    margin-left: 3%;
+    font-size: 1.25rem;
+}
+#eliminar_mark {
+    font-size: 1.25rem;
+    background-color: #338b33;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5vh;
+}
+#rango {
+    transform: scale(0.75);
+}
+.rango {
+    font-size: 0.75rem;
+}
+#centrar {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4caf50;
+    z-index: 1000;
+    width: 15vw;
+    padding: 1%;
+    border-radius: 10%;
+}
